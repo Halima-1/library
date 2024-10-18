@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>javascript library</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
+      <p>input a book title to remove book from the library</p>
       <form action="">
+        <i style="color: green" id="notify"></i>
+
+        <p style="color: red" id="err"></p>
         <input
           class="input"
           type="text"
@@ -24,6 +28,12 @@
           placeholder="rating.. e.g 2"
         />
         <input class="btn" type="button" onclick="addBook()" value="Add book" />
+        <input
+          class="btn"
+          type="button"
+          onclick="removeBook()"
+          value="Remove book"
+        />
       </form>
     </div>
 
